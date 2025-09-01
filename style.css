@@ -1,0 +1,109 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #000;
+  color: #fff;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background: #e60000;
+  padding: 1rem;
+}
+.navbar .logo {
+  color: #00b300;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 4rem 1rem;
+  background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url('https://source.unsplash.com/1600x600/?gym,fitness') center/cover no-repeat;
+}
+.hero h2 {
+  font-size: 2.5rem;
+  color: #00b300;
+}
+.hero .btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background: #e60000;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+/* Sections */
+.section {
+  padding: 2rem;
+  text-align: center;
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.card {
+  background: #111;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 2px solid #e60000;
+}
+
+/* Schedule Table */
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 80%;
+}
+table, th, td {
+  border: 1px solid #00b300;
+  padding: 0.5rem;
+}
+th {
+  background: #e60000;
+}
+td {
+  background: #111;
+}
+
+/* Forms */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 400px;
+  margin: auto;
+}
+form input, form button {
+  padding: 0.75rem;
+  border: none;
+  border-radius: 6px;
+}
+form button {
+  background: #00b300;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #e60000;
+}
