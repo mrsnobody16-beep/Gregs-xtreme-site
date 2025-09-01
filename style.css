@@ -1,192 +1,106 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Greg's Xtreme Fitness</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: white;
-      color: #222;
-    }
+/* General styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: white;
+  color: #333;
+  line-height: 1.6;
+}
 
-    header {
-      position: relative;
-      overflow: hidden;
-      height: 400px;
-    }
+/* Header */
+header {
+  background: red;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
 
-    .slideshow-container {
-      position: relative;
-      width: 100%;
-      height: 100%;
-    }
+header h1 {
+  margin: 0;
+}
 
-    .slides {
-      display: none;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
 
-    nav {
-      background: #222;
-      padding: 10px;
-      text-align: center;
-    }
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
 
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
+nav a:hover {
+  color: green;
+}
 
-    section {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
+/* Slideshow */
+.slideshow-container {
+  position: relative;
+  max-width: 100%;
+  height: 400px;
+  margin: 20px auto;
+  overflow: hidden;
+}
 
-    h2 {
-      text-align: center;
-      margin-bottom: 20px;
-      color: #e63946;
-    }
+.slides {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
 
-    .rates-table {
-      width: 100%;
-      border-collapse: collapse;
-    }
+.slides img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
-    .rates-table th, .rates-table td {
-      border: 1px solid #ddd;
-      padding: 12px;
-      text-align: center;
-    }
+/* Sections */
+section {
+  padding: 40px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
 
-    .rates-table th {
-      background-color: #f4f4f4;
-    }
+section h2 {
+  color: red;
+  margin-bottom: 20px;
+}
 
-    footer {
-      background: #222;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
+/* Registration Form */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+  gap: 15px;
+}
 
-    .btn {
-      display: inline-block;
-      padding: 12px 20px;
-      background: #e63946;
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 5px;
-      margin-top: 20px;
-    }
-  </style>
-</head>
-<body>
+form input, form button {
+  padding: 10px;
+  font-size: 16px;
+}
 
-  <!-- Navigation -->
-  <nav>
-    <a href="#hours">Opening Hours</a>
-    <a href="#schedule">Class Schedule</a>
-    <a href="#rates">Rates</a>
-    <a href="#register">Register Now</a>
-    <a href="#contact">Contact</a>
-  </nav>
+form button {
+  background: green;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
 
-  <!-- Header with Slideshow -->
-  <header>
-    <div class="slideshow-container">
-      <img src="gym1.png" class="slides">
-      <img src="gym2.png" class="slides">
-      <img src="gym3.png" class="slides">
-    </div>
-  </header>
+form button:hover {
+  background: red;
+}
 
-  <!-- Opening Hours -->
-  <section id="hours">
-    <h2>Opening Hours</h2>
-    <p>Monday - Friday: 5:00 AM - 10:00 PM</p>
-    <p>Saturday: 6:00 AM - 8:00 PM</p>
-    <p>Sunday: 6:00 AM - 6:00 PM</p>
-  </section>
-
-  <!-- Class Schedule -->
-  <section id="schedule">
-    <h2>Class Schedule</h2>
-    <p>Monday: Spin Class @ 6:00 PM</p>
-    <p>Wednesday: Yoga @ 7:00 PM</p>
-    <p>Friday: HIIT @ 6:00 PM</p>
-  </section>
-
-  <!-- Rates -->
-  <section id="rates">
-    <h2>Membership Rates</h2>
-    <table class="rates-table">
-      <tr>
-        <th>Plan</th>
-        <th>Price (JMD)</th>
-      </tr>
-      <tr>
-        <td>Monthly</td>
-        <td>9,900</td>
-      </tr>
-      <tr>
-        <td>Quarterly</td>
-        <td>28,500</td>
-      </tr>
-      <tr>
-        <td>Yearly</td>
-        <td>110,000</td>
-      </tr>
-      <tr>
-        <td>Student</td>
-        <td>7,500 / month</td>
-      </tr>
-    </table>
-  </section>
-
-  <!-- Register -->
-  <section id="register" style="text-align:center;">
-    <h2>Register Now</h2>
-    <p>Take the first step towards your fitness journey today!</p>
-    <a href="#contact" class="btn">Register Now</a>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" style="text-align:center;">
-    <h2>Contact Us</h2>
-    <p>Phone: (876) 649-7318</p>
-    <p>Website: gregsxtremefitness.com</p>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Greg's Xtreme Fitness | All Rights Reserved</p>
-  </footer>
-
-  <!-- JavaScript for Slideshow -->
-  <script>
-    let slideIndex = 0;
-    showSlides();
-
-    function showSlides() {
-      let slides = document.getElementsByClassName("slides");
-      for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      slideIndex++;
-      if (slideIndex > slides.length) { slideIndex = 1 }
-      slides[slideIndex-1].style.display = "block";
-      setTimeout(showSlides, 3000); // Change every 3s
-    }
-  </script>
-</body>
-</html>
+/* Footer */
+footer {
+  background: red;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
