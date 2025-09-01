@@ -3,58 +3,190 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gregs Xtreme Fitness</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Greg's Xtreme Fitness</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: white;
+      color: #222;
+    }
+
+    header {
+      position: relative;
+      overflow: hidden;
+      height: 400px;
+    }
+
+    .slideshow-container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    .slides {
+      display: none;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    nav {
+      background: #222;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #e63946;
+    }
+
+    .rates-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .rates-table th, .rates-table td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      text-align: center;
+    }
+
+    .rates-table th {
+      background-color: #f4f4f4;
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 20px;
+      background: #e63946;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
-  <!-- Header -->
-  <header>
-    <h1>Gregs Xtreme Fitness</h1>
-    <nav>
-      <ul>
-        <li><a href="#hours">Opening Hours</a></li>
-        <li><a href="#schedule">Class Schedule</a></li>
-        <li><a href="#rates">Rates</a></li>
-        <li><a href="#register">Register Now</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <!-- Slideshow -->
-  <section class="slideshow-container">
-    <div class="slides fade">
-      <img src="images/gym1.png" alt="Gym photo 1">
+  <!-- Navigation -->
+  <nav>
+    <a href="#hours">Opening Hours</a>
+    <a href="#schedule">Class Schedule</a>
+    <a href="#rates">Rates</a>
+    <a href="#register">Register Now</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Header with Slideshow -->
+  <header>
+    <div class="slideshow-container">
+      <img src="gym1.png" class="slides">
+      <img src="gym2.png" class="slides">
+      <img src="gym3.png" class="slides">
     </div>
-    <div class="slides fade">
-      <img src="images/gym2.png" alt="Gym photo 2">
-    </div>
-    <div class="slides fade">
-      <img src="images/gym3.png" alt="Gym photo 3">
-    </div>
-  </section>
+  </header>
 
   <!-- Opening Hours -->
   <section id="hours">
     <h2>Opening Hours</h2>
-    <p>Monday – Friday: 5:00 AM – 10:00 PM</p>
-    <p>Saturday: 6:00 AM – 8:00 PM</p>
-    <p>Sunday: 7:00 AM – 5:00 PM</p>
+    <p>Monday - Friday: 5:00 AM - 10:00 PM</p>
+    <p>Saturday: 6:00 AM - 8:00 PM</p>
+    <p>Sunday: 6:00 AM - 6:00 PM</p>
   </section>
 
   <!-- Class Schedule -->
   <section id="schedule">
     <h2>Class Schedule</h2>
-    <ul>
-      <li>Monday: Spin Class – 6:00 AM</li>
-      <li>Tuesday: Yoga – 7:00 AM</li>
-      <li>Wednesday: CrossFit – 6:00 PM</li>
-      <li>Thursday: Zumba – 7:00 PM</li>
-      <li>Friday: Boxing – 6:00 PM</li>
-    </ul>
+    <p>Monday: Spin Class @ 6:00 PM</p>
+    <p>Wednesday: Yoga @ 7:00 PM</p>
+    <p>Friday: HIIT @ 6:00 PM</p>
   </section>
 
   <!-- Rates -->
   <section id="rates">
     <h2>Membership Rates</h2>
-    <ul>
+    <table class="rates-table">
+      <tr>
+        <th>Plan</th>
+        <th>Price (JMD)</th>
+      </tr>
+      <tr>
+        <td>Monthly</td>
+        <td>9,900</td>
+      </tr>
+      <tr>
+        <td>Quarterly</td>
+        <td>28,500</td>
+      </tr>
+      <tr>
+        <td>Yearly</td>
+        <td>110,000</td>
+      </tr>
+      <tr>
+        <td>Student</td>
+        <td>7,500 / month</td>
+      </tr>
+    </table>
+  </section>
+
+  <!-- Register -->
+  <section id="register" style="text-align:center;">
+    <h2>Register Now</h2>
+    <p>Take the first step towards your fitness journey today!</p>
+    <a href="#contact" class="btn">Register Now</a>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" style="text-align:center;">
+    <h2>Contact Us</h2>
+    <p>Phone: (876) 649-7318</p>
+    <p>Website: gregsxtremefitness.com</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Greg's Xtreme Fitness | All Rights Reserved</p>
+  </footer>
+
+  <!-- JavaScript for Slideshow -->
+  <script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      let slides = document.getElementsByClassName("slides");
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+      slides[slideIndex-1].style.display = "block";
+      setTimeout(showSlides, 3000); // Change every 3s
+    }
+  </script>
+</body>
+</html>
