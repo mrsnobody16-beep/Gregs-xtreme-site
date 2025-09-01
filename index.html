@@ -1,29 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Greg's Xtreme Fitness</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gregs Xtreme Fitness</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Navigation -->
+  <!-- Header -->
   <header>
-    <nav class="navbar">
-      <h1 class="logo">Greg's Xtreme Fitness</h1>
+    <h1>Gregs Xtreme Fitness</h1>
+    <nav>
       <ul>
+        <li><a href="#hours">Opening Hours</a></li>
+        <li><a href="#schedule">Class Schedule</a></li>
         <li><a href="#rates">Rates</a></li>
-        <li><a href="#hours">Hours</a></li>
-        <li><a href="#schedule">Schedule</a></li>
-        <li><a href="#register">Register</a></li>
+        <li><a href="#register">Register Now</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
+  </header>
 
-    <!-- Image Carousel -->
-    <div class="carousel">
-      <div class="slides">
-        <img src="https://source.unsplash.com/1600x500/?gym,fitness" alt="Gym">
-        <img src="https://source.unsplash.com/1600x500/?boxing,training" alt="Boxing">
-        <img src="https://source.unsplash.com/1600x500/?yoga,fitness" alt="Yoga">
-        <img src="https
+  <!-- Slideshow -->
+  <section class="slideshow-container">
+    <div class="slides fade">
+      <img src="images/gym1.png" alt="Gym photo 1">
+    </div>
+    <div class="slides fade">
+      <img src="images/gym2.png" alt="Gym photo 2">
+    </div>
+    <div class="slides fade">
+      <img src="images/gym3.png" alt="Gym photo 3">
+    </div>
+  </section>
+
+  <!-- Opening Hours -->
+  <section id="hours">
+    <h2>Opening Hours</h2>
+    <p>Monday – Friday: 5:00 AM – 10:00 PM</p>
+    <p>Saturday: 6:00 AM – 8:00 PM</p>
+    <p>Sunday: 7:00 AM – 5:00 PM</p>
+  </section>
+
+  <!-- Class Schedule -->
+  <section id="schedule">
+    <h2>Class Schedule</h2>
+    <ul>
+      <li>Monday: Spin Class – 6:00 AM</li>
+      <li>Tuesday: Yoga – 7:00 AM</li>
+      <li>Wednesday: CrossFit – 6:00 PM</li>
+      <li>Thursday: Zumba – 7:00 PM</li>
+      <li>Friday: Boxing – 6:00 PM</li>
+    </ul>
+  </section>
+
+  <!-- Rates -->
+  <section id="rates">
+    <h2>Membership Rates</h2>
+    <ul>
