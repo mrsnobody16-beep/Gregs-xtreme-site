@@ -10,7 +10,6 @@
     a { text-decoration: none; color: inherit; }
     img { max-width: 100%; display: block; }
 
-    /* Header */
     .navbar {
       position: sticky; top: 0; z-index: 1000;
       display: flex; justify-content: space-between; align-items: center;
@@ -22,14 +21,50 @@
     .navbar a { color: #fff; padding: 0.5rem 1rem; border-radius: 4px; }
     .navbar a:hover { background: #555; }
 
-    /* Banner directly under header */
-    .banner { background:#111; } /* fallback so it never looks blank */
+    .banner { background:#111; }
     .banner img { width: 100%; height: auto; }
 
-    /* Sections */
     .section { padding: 4rem 1rem; }
     .plans-section { text-align: center; }
     .plans-section h2 { font-size: 2.2rem; color: #e60000; margin-bottom: 2rem; }
 
     .plans {
-      display: grid; grid-template-columns: repeat(au
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      padding: 2rem 0;
+    }
+    .plan {
+      border: 1px solid #ccc;
+      padding: 1.5rem;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">Greg’s Xtreme Fitness</div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Plans</a></li>
+      <li><a href="#">Trainers</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="banner">
+    <img src="https://via.placeholder.com/1600x400?text=Welcome+to+Greg's+Xtreme+Fitness" alt="Fitness Banner">
+  </section>
+
+  <section class="section plans-section">
+    <h2>Our Plans</h2>
+    <div class="plans">
+      <div class="plan">Basic Plan</div>
+      <div class="plan">Premium Plan</div>
+      <div class="plan">Ultimate Plan</div>
+    </div>
+  </section>
+
+</body>
+</html>
