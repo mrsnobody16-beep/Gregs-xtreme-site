@@ -1,25 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Greg’s Xtreme Fitness</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: Arial, sans-serif; color: #222; line-height: 1.6; }
+    body { font-family: Arial, sans-serif; color: #222; line-height: 1.6; background:#fff; }
     a { text-decoration: none; color: inherit; }
     img { max-width: 100%; display: block; }
 
-    /* Navbar */
+    /* Header */
     .navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background: #333;
-      padding: 1rem;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
+      position: sticky; top: 0; z-index: 1000;
+      display: flex; justify-content: space-between; align-items: center;
+      background: #333; padding: 1rem;
     }
     .navbar .logo { color: #fff; font-size: 1.5rem; font-weight: bold; }
     .navbar ul { display: flex; list-style: none; }
@@ -27,23 +22,14 @@
     .navbar a { color: #fff; padding: 0.5rem 1rem; border-radius: 4px; }
     .navbar a:hover { background: #555; }
 
-    /* Banner */
-    .banner {
-      width: 100%;
-    }
-    .banner img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
+    /* Banner directly under header */
+    .banner { background:#111; } /* fallback so it never looks blank */
+    .banner img { width: 100%; height: auto; }
 
-    /* Hero */
-    .hero {
-      background: url('hero-bg.jpg') center/cover no-repeat;
-      color: #fff; text-align: center;
-      padding: 6rem 1rem;
-    }
-    .hero h1 { font-size: 3rem; margin-bottom: 1rem; }
-    .hero p { font-size: 1.25rem; }
+    /* Sections */
+    .section { padding: 4rem 1rem; }
+    .plans-section { text-align: center; }
+    .plans-section h2 { font-size: 2.2rem; color: #e60000; margin-bottom: 2rem; }
 
-    /* Membership Plans */
+    .plans {
+      display: grid; grid-template-columns: repeat(au
