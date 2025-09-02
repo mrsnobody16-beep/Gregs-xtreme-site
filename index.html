@@ -10,6 +10,14 @@
     a { text-decoration: none; color: inherit; }
     img { max-width: 100%; display: block; }
 
+    /* Banner */
+    .banner img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* Navbar */
     .navbar {
       display: flex; justify-content: space-between; align-items: center;
       background: #333; padding: 1rem;
@@ -20,6 +28,7 @@
     .navbar a { color: #fff; padding: 0.5rem 1rem; border-radius: 4px; }
     .navbar a:hover { background: #555; }
 
+    /* Hero */
     .hero {
       background: url('hero-bg.jpg') center/cover no-repeat;
       color: #fff; text-align: center;
@@ -28,6 +37,7 @@
     .hero h1 { font-size: 3rem; margin-bottom: 1rem; }
     .hero p { font-size: 1.25rem; }
 
+    /* Membership Plans */
     .plans-section {
       padding: 4rem 1rem;
       background: #fff;
@@ -57,6 +67,7 @@
       margin-bottom: 1rem;
     }
 
+    /* Features */
     .features {
       background: #eee;
       padding: 4rem 1rem;
@@ -75,6 +86,7 @@
       padding: 1.5rem;
     }
 
+    /* CTA */
     .cta {
       padding: 3rem 1rem;
       background: #333;
@@ -94,6 +106,7 @@
       font-size: 1.2rem;
     }
 
+    /* Footer */
     .footer {
       background: #222;
       color: #aaa;
@@ -109,6 +122,11 @@
   </style>
 </head>
 <body>
+
+  <!-- ✅ Banner -->
+  <div class="banner">
+    <img src="1.png" alt="Welcome to Greg’s Xtreme Fitness">
+  </div>
 
   <!-- Navigation -->
   <nav class="navbar">
@@ -134,57 +152,4 @@
     <div class="plans">
       <div class="plan">
         <h3>Standard</h3>
-        <div class="price">J$9,500</div>
-        <p>Includes 24/7 access and a goal‑setting session</p>
-      </div>
-      <div class="plan">
-        <h3>Premium</h3>
-        <div class="price">J$12,500</div>
-        <p>Everything above, plus personal training & sauna</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Features -->
-  <section class="features">
-    <h2>Why Choose Greg’s Xtreme Fitness?</h2>
-    <ul>
-      <li>State-of-the-art Equipment</li>
-      <li>Expert Personal Trainers</li>
-      <li>Wide Variety of Classes</li>
-      <li>Flexible Membership Plans</li>
-    </ul>
-  </section>
-
-  <!-- Call to Action -->
-  <section class="cta" id="contact">
-    <h2>Ready to Transform?</h2>
-    <a href="#signup">Join Now</a>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <p>Phone: (876) 649-7318</p>
-    <div class="hours">
-      <strong>Hours:</strong><br>
-      Monday: 5 am–9 pm<br>
-      Tuesday: 5 am–9 pm<br>
-      Wednesday: 5 am–9 pm<br>
-      Thursday: 5 am–9 pm<br>
-      Friday: 5 am–5:30 pm<br>
-      Saturday: 7–10 pm<br>
-      Sunday: 11 am–3 pm
-    </div>
-    <p style="margin-top: 2rem;">
-      <a href="#">Home</a> | <a href="#">About Us</a> |
-      <a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a>
-    </p>
-    <p>Follow us:
-      <a href="#">Facebook</a>,
-      <a href="#">Instagram</a>,
-      <a href="#">X</a>
-    </p>
-  </footer>
-
-</body>
-</html>
+        <div class="price">J$9
